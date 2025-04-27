@@ -1,0 +1,454 @@
+/* ======================================= */
+/* --- IDENTIDADE VISUAL E ESTILOS GERAIS --- */
+/* ======================================= */
+:root {
+    --cor-primaria: #0a2e36;
+    --cor-secundaria: #2ddcb1;
+    --cor-terciaria: #78e4d1;
+    --cor-fundo: #f0f7f7;
+    --cor-texto: #333;
+    --cor-branco: #fff;
+    --cor-whatsapp: #25D366;
+    --fonte-padrao: 'Montserrat', sans-serif;
+    --box-shadow-padrao: 0 4px 15px rgba(0, 0, 0, 0.08);
+    --border-radius-padrao: 12px;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: var(--fonte-padrao);
+    margin: 0;
+    padding: 0;
+    background-color: var(--cor-fundo);
+    color: var(--cor-texto);
+    padding-top: 80px;
+    position: relative;
+    overflow-x: hidden;
+}
+
+h2 {
+    font-size: 2.2rem;
+    color: var(--cor-primaria);
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.section {
+    padding: 60px 0;
+}
+
+/* --- ANIMAÇÃO DE ESTRELAS --- */
+@keyframes aparecerSair {
+    0%, 100% { opacity: 0; transform: scale(0.5); }
+    50% { opacity: 1; transform: scale(1); }
+}
+
+#estrelas-animadas {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+.estrela {
+    position: absolute;
+    background-color: var(--cor-terciaria);
+    border-radius: 50%;
+    animation: aparecerSair 5s infinite ease-in-out;
+}
+.estrela:nth-child(1) { width: 3px; height: 3px; top: 20%; left: 15%; animation-delay: 0s; }
+.estrela:nth-child(2) { width: 4px; height: 4px; top: 50%; left: 80%; animation-delay: 1.5s; }
+.estrela:nth-child(3) { width: 2px; height: 2px; top: 80%; left: 30%; animation-delay: 3s; }
+.estrela:nth-child(4) { width: 3px; height: 3px; top: 10%; left: 90%; animation-delay: 4.5s; }
+.estrela:nth-child(5) { width: 4px; height: 4px; top: 60%; left: 5%; animation-delay: 2s; }
+
+
+/* --- BOTÕES E ELEMENTOS GERAIS --- */
+.button, .whatsapp-button, .login-button {
+    display: inline-block;
+    padding: 14px 32px;
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: bold;
+    text-align: center;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+.button:hover, .whatsapp-button:hover, .login-button:hover {
+    transform: translateY(-3px) scale(1.05);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+}
+.button {
+    background-color: var(--cor-primaria);
+    color: var(--cor-branco);
+}
+.whatsapp-button {
+    background-color: var(--cor-whatsapp);
+    color: var(--cor-branco);
+}
+
+/* --- HEADER E NAVEGAÇÃO --- */
+.main-header {
+    background-color: rgba(255, 255, 255, 0.85);
+    backdrop-filter: blur(10px);
+    border-bottom: 1px solid #eee;
+    position: fixed;
+    top: 0; left: 0; width: 100%;
+    z-index: 1000;
+}
+.main-header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;
+}
+#iconlogo {
+    width: 150px;
+    height: 60px;
+    background-image: url(imgs/cartaz.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+#sanduiche {
+    display: block;
+    font-size: 2rem;
+    cursor: pointer;
+    color: var(--cor-primaria);
+}
+#main-nav {
+    display: none;
+    position: absolute;
+    top: 80px;
+    left: 0;
+    width: 100%;
+    background-color: var(--cor-branco);
+    box-shadow: var(--box-shadow-padrao);
+}
+#main-nav.menu-aberto {
+    display: block;
+}
+#main-nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+#main-nav li a {
+    display: block;
+    padding: 15px 20px;
+    text-decoration: none;
+    color: var(--cor-primaria);
+    font-weight: 700;
+    border-bottom: 1px solid #f0f0f0;
+    text-align: center;
+    transition: all 0.2s ease;
+}
+#main-nav li a:hover {
+    background-color: var(--cor-fundo);
+    color: var(--cor-secundaria);
+}
+.login-button {
+    background-color: var(--cor-secundaria);
+    color: var(--cor-primaria);
+    font-weight: 700;
+    padding: 10px 20px;
+    margin: 10px;
+}
+.login-button:hover{
+    color: var(--cor-branco);
+    background-color: var(--cor-primaria);
+}
+
+/* --- SEÇÃO APRESENTAÇÃO --- */
+#apresentacao .apresentacao-conteudo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+#imagemPERFIL {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 25px;
+    border: 5px solid var(--cor-secundaria);
+    box-shadow: var(--box-shadow-padrao);
+}
+#apresentacao .texto {
+    max-width: 700px;
+}
+#apresentacao .texto p {
+    text-align: center;
+    line-height: 1.7;
+}
+#apresentacao .video-container {
+    position: relative;
+    width: 100%;
+    max-width: 800px;
+    margin: 40px auto;
+    box-shadow: var(--box-shadow-padrao);
+    border-radius: var(--border-radius-padrao);
+    overflow: hidden;
+}
+#apresentacao .video-container::before {
+    content: '';
+    display: block;
+    padding-top: 56.25%;
+}
+#apresentacao .video-container iframe {
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    border: none;
+}
+.cta-container {
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* --- DESIGN DE CARD UNIFICADO --- */
+.area-item, .ebook-item, .atividade-item {
+    background: var(--cor-branco);
+    border-radius: var(--border-radius-padrao);
+    box-shadow: var(--box-shadow-padrao);
+    text-align: center;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+.area-item:hover, .ebook-item:hover, .atividade-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(45, 220, 177, 0.2);
+}
+
+/* --- ÁREAS DE ATUAÇÃO --- */
+.areas-atuacao-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 25px;
+}
+.area-item img {
+    width: 100%;
+    height: 160px;
+    object-fit: cover;
+}
+.area-item span {
+    padding: 20px 15px;
+    font-weight: 700;
+    color: var(--cor-primaria);
+    font-size: 1.1em;
+}
+
+/* --- E-BOOKS E ATIVIDADES --- */
+.ebook-grid, .atividades-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 25px;
+}
+.ebook-item img, .atividade-item .imgsdeatv {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+.ebook-item .card-content, .atividade-item .card-content {
+    padding: 25px;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+}
+.ebook-item h3, .atividade-item h3 {
+    color: var(--cor-primaria);
+    font-size: 1.3em;
+    margin-top: 0;
+    flex-grow: 1;
+}
+.ebook-item p, .atividade-item p {
+    text-align: center;
+    flex-grow: 2;
+    line-height: 1.6;
+}
+.ebook-item .button, .atividade-item .button {
+    margin-top: 20px;
+}
+
+
+/* --- AGENDAMENTO --- */
+#agendamento.section {
+    background-color: #e9f5f3;
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+.form-agendamento {
+    background: var(--cor-branco);
+    padding: 40px;
+    border-radius: var(--border-radius-padrao);
+    box-shadow: var(--box-shadow-padrao);
+    max-width: 600px;
+    margin: 0 auto;
+}
+.form-agendamento .form-group input {
+    background-color: var(--cor-fundo);
+    border: 2px solid #ddd;
+    transition: border-color 0.2s ease;
+    padding: 14px;
+    font-size: 1em;
+}
+.form-agendamento .form-group input:focus {
+    outline: none;
+    border-color: var(--cor-secundaria);
+}
+.form-agendamento .button {
+    width: 100%;
+    font-size: 1.1em;
+    background-color: var(--cor-secundaria);
+    color: var(--cor-primaria);
+}
+.form-agendamento .button:hover {
+    background-color: var(--cor-primaria);
+    color: var(--cor-branco);
+}
+
+
+/* --- CONTATO --- */
+.contato-icones {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    margin-top: 30px;
+}
+.contato-icones a {
+    transition: transform 0.2s ease;
+}
+.contato-icones a:hover {
+    transform: scale(1.15);
+}
+.contato-icones img {
+    width: 80px;
+    height: 80px;
+}
+
+/* --- VÍDEO FLUTUANTE (AJUSTADO) --- */
+/* Este é o estilo padrão para MOBILE (pequeno) */
+.video-flutuante {
+    display: block;
+    position: fixed;
+    bottom: 15px;
+    right: 15px;
+    width: 180px; /* Tamanho menor para celulares */
+    height: auto;
+    z-index: 1000;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.2);
+    border-radius: var(--border-radius-padrao);
+    overflow: hidden;
+}
+.video-flutuante video {
+    width: 100%;
+    display: block;
+}
+.fechar-video-flutuante {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    background: rgba(0,0,0,0.6);
+    color: var(--cor-branco);
+    border: none;
+    width: 22px; /* Ajustado para o novo tamanho */
+    height: 22px;
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 14px;
+    line-height: 22px; /* Centraliza o "x" */
+    text-align: center;
+    z-index: 1001;
+}
+
+/* --- PÁGINA DE LOGIN --- */
+.login-page-body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(135deg, var(--cor-terciaria), var(--cor-secundaria));
+    padding-top: 0;
+}
+.login-container {
+    background-color: var(--cor-branco);
+    padding: 40px;
+    border-radius: var(--border-radius-padrao);
+    box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+}
+#iconlogo-login {
+    width: 150px;
+    height: 60px;
+    background-image: url(imgs/cartaz.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin: 0 auto 20px;
+}
+.login-container h2 { margin-bottom: 30px; }
+.form-group { margin-bottom: 20px; }
+.form-group label { display: block; margin-bottom: 8px; font-weight: bold; text-align: left; }
+.form-group input { width: 100%; padding: 12px; border: 1px solid #ccc; border-radius: 8px; box-sizing: border-box; }
+.error-message { color: #d93025; font-size: 0.9em; margin-top: 15px; min-height: 20px; }
+
+/* --- ÁREA DO PACIENTE --- */
+.paciente-page-body { padding-top: 0; }
+.paciente-header { display: flex; justify-content: space-between; align-items: center; padding: 15px 30px; background-color: var(--cor-primaria); color: var(--cor-branco); }
+.paciente-info { display: flex; align-items: center; gap: 15px; }
+#foto-paciente { width: 50px; height: 50px; border-radius: 50%; object-fit: cover; border: 2px solid var(--cor-branco); }
+#nome-paciente { font-size: 1.2em; font-weight: bold; }
+.button-logout { background: transparent; border: 1px solid var(--cor-branco); color: var(--cor-branco); padding: 8px 16px; border-radius: 20px; cursor: pointer; transition: all 0.2s ease; }
+.button-logout:hover { background-color: var(--cor-branco); color: var(--cor-primaria); }
+.paciente-main { display: flex; flex-direction: column; }
+.paciente-nav { display: flex; justify-content: center; background-color: #e9f5f3; padding: 10px; gap: 10px; }
+.paciente-nav-button { flex-grow: 1; max-width: 200px; padding: 15px; border: none; background-color: transparent; color: var(--cor-primaria); font-weight: 700; cursor: pointer; border-radius: 5px; transition: all 0.2s ease; border-bottom: 3px solid transparent; }
+.paciente-nav-button:hover { background-color: var(--cor-terciaria); }
+.paciente-nav-button.active { background-color: var(--cor-secundaria); color: var(--cor-primaria); border-bottom: 3px solid var(--cor-primaria); }
+.conteudo-container { padding: 30px; }
+.video-grid, .atividade-list { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 20px; }
+.video-item, .atividade-card { background: var(--cor-branco); border-radius: var(--border-radius-padrao); box-shadow: 0 2px 5px rgba(0,0,0,0.07); overflow: hidden; }
+.video-item iframe { width: 100%; height: 180px; border: none; display: block; }
+.video-item p { font-weight: bold; padding: 15px; text-align: center; }
+.atividade-card { padding: 20px; text-align: center; }
+
+
+/* --- ESTILOS RESPONSIVOS (Desktop) --- */
+@media (min-width: 768px) {
+    #sanduiche { display: none; }
+    #main-nav { display: flex !important; position: static; width: auto; background-color: transparent; box-shadow: none; }
+    #main-nav ul { flex-direction: row; align-items: center; }
+    #main-nav li a { border: none; padding: 5px 15px; }
+    #main-nav .login-button { margin: 0 0 0 20px; padding: 10px 20px; }
+    #apresentacao .texto p { text-align: justify; }
+
+    /* AUMENTA O VÍDEO FLUTUANTE NO DESKTOP (AJUSTADO) */
+    .video-flutuante {
+        width: 300px; /* Tamanho maior para desktop */
+        bottom: 20px;
+        right: 20px;
+    }
+}

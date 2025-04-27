@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minha Área - Fonoaudiologia</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="paciente-page-body">
+
+    <script>
+        if (!sessionStorage.getItem('pacienteLogado')) {
+            window.location.href = 'login.html';
+        }
+    </script>
+    
+    <header class="paciente-header">
+        <div class="paciente-info">
+            <img id="foto-paciente" src="" alt="Foto do Paciente">
+            <span id="nome-paciente"></span>
+        </div>
+        <button id="logout-button" class="button-logout">Sair</button>
+    </header>
+
+    <main class="paciente-main">
+        <div class="paciente-nav">
+            <button class="paciente-nav-button" data-content="exercicios">Exercícios</button>
+            <button class="paciente-nav-button" data-content="atividades">Atividades</button>
+        </div>
+
+        <div id="conteudo-dinamico" class="conteudo-container">
+            <h2>Bem-vindo(a)!</h2>
+            <p>Selecione uma das opções acima para começar.</p>
+        </div>
+    </main>
+
+    <script src="pacientes.js"></script>
+</body>
+</html>

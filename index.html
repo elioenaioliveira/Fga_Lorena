@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title data-config="nomeProfissional">Fonoaudiologia</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="imgs/file.ico" type="image/x-icon">
+</head>
+<body>
+
+    <div id="estrelas-animadas">
+        <div class="estrela"></div><div class="estrela"></div><div class="estrela"></div><div class="estrela"></div><div class="estrela"></div>
+    </div>
+
+    <header class="main-header">
+        <div class="container">
+            <a href="#" class="logo-link"><div id="iconlogo"></div></a>
+            <div id="sanduiche" onclick="toggleMenu()">☰</div>
+            <nav id="main-nav">
+                <ul>
+                    <li><a href="#apresentacao">Apresentação</a></li>
+                    <li><a href="#atuacao">Áreas de Atuação</a></li>
+                    <li><a href="#ebooks">E-books</a></li>
+                    <li><a href="#atividades">Atividades</a></li>
+                    <li><a href="#agendamento">Agendamento</a></li>
+                    <li><a href="#contato">Contato</a></li>
+                    <li><a href="login.html" class="login-button">Área do Paciente</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section id="apresentacao" class="section">
+            <div class="container">
+                <div class="apresentacao-conteudo">
+                    <img id="imagemPERFIL" src="imgs/perfil_redondo.png" alt="Foto da Profissional" class="foto-profissional">
+                    <div class="texto">
+                        <h2>Apresentação</h2>
+                        <p>
+                            Olá! Sou a Fonoaudióloga <span data-config="nomeProfissional"></span>, apaixonada pela arte da comunicação, alimentação e orientação. Desde o início da minha trajetória, percebi o impacto transformador que a fonoaudiologia tem na vida das pessoas – seja ajudando um bebê e sua mãe na amamentação, auxiliando um adulto a recuperar a voz, promovendo a deglutição segura dos alimentos para um idoso ou proporcionando uma comunicação mais clara e confiante.
+                            <br><br>
+                            Amo a fonoaudiologia porque ela me permite conectar, acolher e transformar vidas em todas as faixas etárias. Cada caso é único, e meu compromisso é oferecer um atendimento humanizado e baseado em evidências, respeitando as necessidades e individualidades de cada paciente, trazendo segurança e autonomia.
+                            <br><br>
+                            Seja bem-vindo(a) ao meu espaço! Estou aqui para ajudar você a conquistar uma vida mais plena e saudável.
+                        </p>
+                    </div>
+                </div>
+                <div class="video-container">
+                    <iframe data-config-youtube="videoApresentacaoYouTube" src="#" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+                <div class="cta-container">
+                    <a data-config-whatsapp="true" href="#" class="whatsapp-button" target="_blank">AGENDE UMA AVALIAÇÃO</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="atuacao" class="section">
+            <div class="container">
+                <h2>Áreas de Atuação</h2>
+                <div class="areas-atuacao-grid">
+                    <div class="area-item"><img src="https://img.freepik.com/fotos-gratis/terapeuta-fonoaudiologa-trabalhando-com-crianca_1303-17865.jpg" alt="Alterações motoras da fala"><span>Alterações motoras da fala</span></div>
+                    <div class="area-item"><img src="https://img.freepik.com/fotos-gratis/terapeuta-realizando-exercicio-de-motricidade-orofacial_1303-17864.jpg" alt="Motricidade orofacial"><span>Motricidade orofacial</span></div>
+                    <div class="area-item"><img src="https://img.freepik.com/fotos-gratis/bebe-com-dificuldade-para-alimentar-se_1303-17870.jpg" alt="Dificuldades alimentares pediátricas"><span>Dificuldades alimentares pediátricas</span></div>
+                    <div class="area-item"><img src="https://img.freepik.com/fotos-gratis/idoso-recebendo-ajuda-para-engolir_1303-17869.jpg" alt="Disfagia"><span>Disfagia</span></div>
+                    <div class="area-item"><img src="https://img.freepik.com/fotos-gratis/microfone-e-pessoa-preparando-voz_1303-17872.jpg" alt="Voz"><span>Voz</span></div>
+                    <div class="area-item"><img src="https://img.freepik.com/fotos-gratis/mae-amamentando-bebe_1303-17871.jpg" alt="Amamentação"><span>Amamentação</span></div>
+                </div>
+            </div>
+        </section>
+
+        <section id="ebooks" class="section">
+            <div class="container">
+                <h2>E-books</h2>
+                <div class="ebook-grid">
+                    <div class="ebook-item">
+                        <img data-config="imagemEbookGratis" src="imgs/Screenshot_20250418_095825_Chrome.jpg" alt="Capa do Ebook Grátis">
+                        <div class="card-content">
+                            <h3>Apraxia de fala na infância</h3>
+                            <p>A Apraxia de Fala na Infância (AFI) é um distúrbio neurológico motor da fala em que as crianças têm dificuldade em planejar e produzir os movimentos precisos necessários para falar.</p>
+                        </div>
+                    </div>
+                    <div class="ebook-item">
+                        <img data-config="imagemEbookGratis" src="https://m.media-amazon.com/images/I/611wopNC5LL._AC_UF1000,1000_QL80_.jpg" alt="Capa do Ebook Grátis">
+                        <div class="card-content">
+                            <h3>Audiologia Avançada</h3>
+                            <p>A audiologia é a ciência que estuda a audição, o equilíbrio e distúrbios relacionados. O objetivo é otimizar a comunicação e a qualidade de vida.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="atividades" class="section">
+            <div class="container">
+                <h2>Atividades para Download</h2>
+                <div class="atividades-grid">
+                    <div class="atividade-item">
+                        <img class="imgsdeatv" src="https://vipzinho.com.br/wp-content/uploads/2023/09/fonoaudiologa-tratamento-fala-rhc-2.jpg" alt="Imagem da Atividade 1">
+                        <div class="card-content">
+                            <h3>Atividade 1: Exercícios de fala</h3>
+                            <p>Visa aprimorar a comunicação, trabalhando aspectos como articulação de sons, ritmo, fluidez e expressividade da fala.</p>
+                            <a data-config-whatsapp-atividade="Atividade 1" href="#" class="button" target="_blank">COMPRAR</a>
+                        </div>
+                    </div>
+                    <div class="atividade-item">
+                        <img class="imgsdeatv" src="https://www.binaural.com.br/wp-content/uploads/2023/05/fonoaudiologo1-1024x682.jpg" alt="Imagem da Atividade 2">
+                        <div class="card-content">
+                            <h3>Atividade 2: Exercícios de audição</h3>
+                            <p>Exercícios de fonoaudiologia focados em audição podem melhorar a detecção, discriminação e compreensão de sons.</p>
+                            <a data-config-whatsapp-atividade="Atividade 2" href="#" class="button" target="_blank">COMPRAR</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="agendamento" class="section">
+            <div class="container">
+                <h2>Agendamento Online</h2>
+                <form class="form-agendamento">
+                    <div class="form-group">
+                        <label for="nm">Nome Completo:</label>
+                        <input type="text" name="nm" id="nm" placeholder="Digite seu nome completo">
+                    </div>
+                    <div class="form-group">
+                        <label for="data">Data Desejada:</label>
+                        <input type="date" id="data">
+                    </div>
+                    <div class="form-group">
+                        <label for="hora">Hora Desejada:</label>
+                        <input type="time" id="hora">
+                    </div>
+                    <div class="form-group">
+                        <a href="#" class="button" target="_blank">Solicitar Agendamento</a>
+                    </div>
+                </form>
+            </div>
+        </section>
+
+        <section id="contato" class="section">
+            <div class="container">
+                <h2>Contato</h2>
+                <p>Clique no ícone para entrar em contato!</p>
+                <div class="contato-icones">
+                    <a href="https://wa.me/5519997662818?text=Olá"><img src="https://cdn-icons-png.freepik.com/512/3536/3536445.png" alt="WhatsApp"></a>
+                    <a href="https://www.instagram.com/lorenacarioca"><img src="https://store-images.s-microsoft.com/image/apps.43327.13510798887167234.cadff69d-8229-427b-a7da-21dbaf80bd81.79b8f512-1b22-45d6-9495-881485e3a87e" alt="Instagram"></a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <div class="video-flutuante">
+        <button class="fechar-video-flutuante" onclick="fecharVideoFlutuante()">×</button>
+        <video controls autoplay muted loop>
+            <source src="videos/lorena.mp4" type="video/mp4">
+            Seu navegador não suporta o elemento de vídeo.
+        </video>
+    </div>
+    
+    <footer>
+        <div class="container">
+            <p>Elioenai Programmer© [2025] <span data-config="nomeProfissional"></span>. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+    
+    <script src="config.js"></script>
+    <script>
+        // Função para abrir/fechar o menu hambúrguer
+        function toggleMenu() {
+            const nav = document.getElementById('main-nav');
+            nav.classList.toggle('menu-aberto');
+        }
+
+        // Função para fechar o vídeo flutuante
+        function fecharVideoFlutuante() {
+            document.querySelector('.video-flutuante').style.display = 'none';
+        }
+
+        // --- NOVO CÓDIGO ADICIONADO ---
+        // Garante que o script rode após o carregamento da página
+        document.addEventListener('DOMContentLoaded', function() {
+            // Seleciona todos os links dentro da navegação principal
+            const navLinks = document.querySelectorAll('#main-nav a');
+
+            // Adiciona um "ouvinte" de clique a cada um dos links
+            navLinks.forEach(function(link) {
+                link.addEventListener('click', function() {
+                    // Pega o elemento da navegação
+                    const nav = document.getElementById('main-nav');
+                    
+                    // Se o menu estiver aberto (no modo celular), ele o fecha
+                    if (nav.classList.contains('menu-aberto')) {
+                        toggleMenu(); // Reutiliza a função já existente para fechar
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html>
