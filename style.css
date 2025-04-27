@@ -1,0 +1,492 @@
+body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+header {
+    background-color: #fff;
+    padding: 20px 0;
+    border-bottom: 1px solid #ddd;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 24px;
+}
+
+header nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+header nav ul li {
+    margin-left: 20px;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: #555;
+    transition: color 0.3s ease;
+}
+
+header nav ul li a:hover {
+    color: #007bff;
+}
+
+main{
+    background-color: #22c3b0;
+}
+
+main .section {
+    padding: 40px 0;;
+}
+
+main h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.apresentacao-conteudo {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.apresentacao-conteudo .texto {
+    flex: 1;
+}
+
+.apresentacao-conteudo .video {
+    flex: 1;
+}
+
+.whatsapp-button {
+    display: inline-block;
+    background-color: #25D366;
+    color: #fff;
+    padding: 15px 30px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.whatsapp-button:hover {
+    background-color: #128C7E;
+}
+
+.areas-atuacao-lista {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.area-atuacao-item {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.area-atuacao-item h3 {
+    margin-top: 0;
+    font-size: 20px;
+}
+
+.saiba-mais-conteudo {
+    display: none;
+    margin-top: 15px;
+    padding: 15px;
+    background-color: #f9f9f9;
+    border-radius: 5px;
+    border: 1px solid #eee;
+}
+
+.saiba-mais-conteudo.mostrar {
+    display: block;
+}
+
+.saiba-mais-conteudo h4 {
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+.saiba-mais-conteudo ul {
+    padding-left: 20px;
+}
+
+.button {
+    display: inline-block;
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.button:hover {
+    background-color: #0056b3;
+}
+
+.atividades-lista {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.atividade-item {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.atividade-item h3 {
+    margin-top: 0;
+    font-size: 18px;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 15px 0;
+    font-size: 14px;
+}
+
+.video-flutuante {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 320px;
+    height: 180px;
+    z-index: 1000;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.video-flutuante iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+.fechar-video-flutuante {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 5px 8px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 14px;
+    line-height: 1;
+    z-index: 1001;
+}
+
+/* Estilos para a seção de Ebooks */
+#ebook {
+    padding: 40px 0;
+    text-align: center;
+    margin-top: -70px;
+}
+
+.imgsdeatv{
+    width: 40%;
+    border-radius: 10px;
+}
+
+.ebook-banner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
+}
+
+.ebook-banner img[data-config="imagemEbookGratis"] {
+    max-width: 150px;
+    height: auto;
+    margin-bottom: 15px;
+    border-radius: 4px;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+.ebook-banner p {
+    margin-bottom: 20px;
+    color: #555;
+}
+
+.ebook-banner .button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.ebook-banner .button:hover {
+    background-color: #0056b3;
+}
+
+/* Estilos para a prateleira de ebooks */
+.ebook-banner .prateleira {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.ebook-banner .areabook {
+    width: 150px;
+    height: 220px;
+    perspective: 800px;
+}
+
+.ebook-banner .fotoBook {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+    transition: transform 0.5s ease-in-out;
+    cursor: pointer;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    background-size: cover;
+    background-position: center;
+}
+
+.ebook-banner .areabook:hover .fotoBook {
+    transform: rotateY(20deg);
+}
+
+.ebook-banner .descrição {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+    border-radius: 5px;
+    padding: 10px;
+    text-align: center;
+    transform: translateZ(20px);
+}
+
+.ebook-banner .descrição .title {
+    font-size: 1.1em;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.ebook-banner .descrição .subtitle {
+    font-size: 0.9em;
+    margin-bottom: 10px;
+}
+
+.ebook-banner .descrição .preço {
+    font-size: 1em;
+    font-weight: bold;
+    color: #ffc107;
+}
+
+#iconlogo{
+    width: 250px;
+    height: 150px;
+    background-image: url(imgs/cartaz.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-color: transparent;
+}
+#imagemPERFIL{
+    width: 200px;
+    height: 200px;
+    left: 100px;
+    margin-left: 30% ;
+}
+
+.vitrine-produtos {
+    overflow-x: auto; /* Habilita a barra de rolagem horizontal */
+    white-space: nowrap; /* Impede que os itens quebrem para a próxima linha */
+    padding: 20px 0; /* Adiciona um pouco de espaço vertical */
+    overflow-x: auto; /* ou overflow-y */
+    scrollbar-color: #188d7f #22c3b0; /* thumb track */
+    scrollbar-width: thin;
+    display: flex; /* Adiciona Flexbox */
+    justify-content: left; /* Centraliza horizontalmente */
+    align-items: left; /* Centraliza verticalmente (se necessário) */
+    width: 100%;
+}
+
+.lista-produtos {
+    display: flex; /* Adiciona Flexbox na lista também */
+    justify-content: center; /* Centraliza os produtos horizontalmente */
+    align-items: center; /* Centraliza verticalmente (se necessário) */
+    /* display: inline-block;  */ /* Remove inline-block */
+}
+
+.produto {
+    display: inline-block; /* Coloca os produtos lado a lado */
+    margin-right: 20px; /* Espaçamento entre os produtos */
+    margin-left: 20px;
+    text-align: center; /* Centraliza o texto abaixo da foto */
+}
+
+.produto:last-child {
+    margin-right: 0; /* Remove a margem do último produto */
+}
+
+.foto-produto {
+    width: 250px; /* Defina a largura desejada para as fotos */
+    height: 250px; /* Defina a altura desejada para as fotos */
+    overflow: hidden; /* Garante que a imagem não vaze do container */
+    border-radius: 8px; /* Opcional: bordas arredondadas */
+    margin-bottom: 5px; /* Espaço entre a foto e o nome */
+    display: flex; /* Para centralizar a imagem dentro */
+    justify-content: center;
+    align-items: center;
+    background-color: #f0f0f0; /* Cor de fundo enquanto a imagem carrega */
+}
+
+.foto-produto img {
+    max-width: 100%;
+    max-height: 100%;
+    display: block; /* Remove espaços extras abaixo da imagem */
+    object-fit: cover; /* Garante que a imagem cubra o container sem distorcer */
+}
+
+.nome-produto {
+    font-size: 1em;
+    color: #333;
+}
+#game{
+    width: 100%;
+    height: 450px;
+}
+#boxHidder{
+    position: absolute;
+    z-index: 1;
+    width: 340px;
+    height: 450px;
+    background-color: black;
+}
+#sanduiche{
+    display: none;
+}
+nav > ul > li{
+    text-align: center;
+    padding: 1%;
+}
+/* Estilos Responsivos */
+@media (max-width: 768px) {
+    header .container {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    header h1 {
+        margin-bottom: 10px;
+    }
+
+    header nav ul {
+        flex-direction: column;
+    }
+
+    header nav ul li {
+        margin-left: 0;
+        margin-bottom: 10px;
+    }
+
+    .apresentacao-conteudo {
+        flex-direction: column;
+    }
+
+    .apresentacao-conteudo .video {
+        width: 100%;
+    }
+
+    .apresentacao-conteudo iframe {
+        width: 100%;
+        height: auto;
+    }
+    #sanduiche{
+        display: block;
+        width: 100%;
+        border: 1px solid rgb(125, 110, 110);
+        border-radius: 3px;
+        text-align: center;
+        cursor: pointer;
+    }
+    nav > ul > li{
+        width: 300%;
+        text-align: center;
+    }
+    nav{
+        display: none;
+    }
+    .video-flutuante {
+        width: 280px;
+        height: 157px;
+        bottom: 10px;
+        right: 10px;
+    }
+    .ebook-banner .prateleira {
+        gap: 15px;
+    }
+    .ebook-banner .areabook {
+        width: 120px;
+        height: 180px;
+    }
+    p{
+        padding: 8%;
+        text-align: justify;
+    }
+    #iconlogo{
+        margin-left: 26%;
+        margin-bottom: 5%;
+    }
+    .whatsapp-button{
+        margin-left: 25%;
+    }
+    #boxHidder{
+        display: none;
+    }
+}
+

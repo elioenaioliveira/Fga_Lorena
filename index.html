@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title data-config="nomeProfissional"></title>
+    <link rel="stylesheet" href="style.css">
+    <script src="config.js"></script>
+    <link rel="shortcut icon" href="imgs/file.ico" type="image/x-icon">
+</head>
+<body>
+    <header>
+                <div class="container">
+            <span id="iconlogo"></span>
+            <div id="sanduiche" onclick="apareceMenu()">☰</div>
+            <nav>
+                <ul>
+                    <li><a href="#apresentacao">Apresentação</a></li>
+                    <li><a href="#atuacao">Áreas de Atuação</a></li>
+                    <li><a href="#ebook">Ebook</a></li>
+                    <li><a href="#atividades">Comprar Atividades</a></li>
+                    <li><a href="#agendamento">Agendamento Online</a></li>
+                    <li><a href="#contato">Contato</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section id="apresentacao" class="container section">
+
+            <h2>Apresentação</h2>
+            
+            <div class="apresentacao-conteudo">
+                <div class="texto">
+                    
+                    <img id="imagemPERFIL" src="imgs/perfil_redondo.png" alt="Foto da Profissional" class="foto-profissional">
+                    
+                    <p>
+                        Olá! Sou a Fonoaudióloga <span data-config="nomeProfissional"></span>, apaixonada pela arte da comunicação, alimentação e orientação. Desde o início da minha trajetória, percebi o impacto transformador que a fonoaudiologia tem na vida das pessoas – seja ajudando um bebê e sua mãe na amamentação, auxiliando um adulto a recuperar a voz, promovendo a deglutição segura dos alimentos para um idoso ou proporcionando uma comunicação mais clara e confiante.
+                        <br><br>
+                        Amo a fonoaudiologia porque ela me permite conectar, acolher e transformar vidas em todas as faixas etárias. Cada caso é único, e meu compromisso é oferecer um atendimento humanizado e baseado em evidências, respeitando as necessidades e individualidades de cada paciente, trazendo segurança e autonomia.
+                        <br><br>
+                        Seja bem-vindo(a) ao meu espaço! Estou aqui para ajudar você a conquistar uma vida mais plena e saudável.
+                    </p>
+                </div>
+                <div class="video">
+                    <iframe width="560" height="315" data-config-youtube="videoApresentacaoYouTube" src="#" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+            </div>
+            <a data-config-whatsapp="true" href="#" class="whatsapp-button" target="_blank">AGENDE UMA AVALIAÇÃO</a>
+        </section>
+
+        <section id="atuacao" class="section">
+            <div class="container">
+                <h2>Áreas de Atuação</h2>
+            </div>
+            <section class="vitrine-produtos">
+                <div class="lista-produtos">
+                    <!-- Alterações motoras da fala -->
+                    <div class="produto">
+                        <div class="foto-produto">
+                            <img src="https://img.freepik.com/fotos-gratis/terapeuta-fonoaudiologa-trabalhando-com-crianca_1303-17865.jpg" alt="Alterações motoras da fala">
+                        </div>
+                        <div class="nome-produto">Alterações motoras da fala</div>
+                    </div>
+        
+                    <!-- Motricidade orofacial -->
+                    <div class="produto">
+                        <div class="foto-produto">
+                            <img src="https://img.freepik.com/fotos-gratis/terapeuta-realizando-exercicio-de-motricidade-orofacial_1303-17864.jpg" alt="Motricidade orofacial">
+                        </div>
+                        <div class="nome-produto">Motricidade orofacial</div>
+                    </div>
+        
+                    <!-- Dificuldades alimentares pediátricas -->
+                    <div class="produto">
+                        <div class="foto-produto">
+                            <img src="https://img.freepik.com/fotos-gratis/bebe-com-dificuldade-para-alimentar-se_1303-17870.jpg" alt="Dificuldades alimentares pediátricas">
+                        </div>
+                        <div class="nome-produto">Dificuldades alimentares pediátricas</div>
+                    </div>
+        
+                    <!-- Disfagia -->
+                    <div class="produto">
+                        <div class="foto-produto">
+                            <img src="https://img.freepik.com/fotos-gratis/idoso-recebendo-ajuda-para-engolir_1303-17869.jpg" alt="Disfagia">
+                        </div>
+                        <div class="nome-produto">Disfagia</div>
+                    </div>
+        
+                    <!-- Voz -->
+                    <div class="produto">
+                        <div class="foto-produto">
+                            <img src="https://img.freepik.com/fotos-gratis/microfone-e-pessoa-preparando-voz_1303-17872.jpg" alt="Voz">
+                        </div>
+                        <div class="nome-produto">Voz</div>
+                    </div>
+        
+                    <!-- Amamentação -->
+                    <div class="produto">
+                        <div class="foto-produto">
+                            <img src="https://img.freepik.com/fotos-gratis/mae-amamentando-bebe_1303-17871.jpg" alt="Amamentação">
+                        </div>
+                        <div class="nome-produto">Amamentação</div>
+                    </div>
+        
+                    <!-- Gagueira -->
+                    <div class="produto">
+                        <div class="foto-produto">
+                            <img src="https://img.freepik.com/fotos-gratis/crianca-gaguejando-durante-conversa_1303-17867.jpg" alt="Gagueira">
+                        </div>
+                        <div class="nome-produto">Gagueira</div>
+                    </div>
+        
+                    <!-- Oratória -->
+                    <div class="produto">
+                        <div class="foto-produto">
+                            <img src="https://img.freepik.com/fotos-gratis/pessoa-falando-em-publico_1303-17873.jpg" alt="Oratória">
+                        </div>
+                        <div class="nome-produto">Oratória</div>
+                    </div>
+        
+                    <!-- Orientação parental no autismo -->
+                    <div class="produto">
+                        <div class="foto-produto">
+                            <img src="https://img.freepik.com/fotos-gratis/mae-brincando-com-crianca-autista_1303-17866.jpg" alt="Orientação parental no autismo">
+                        </div>
+                        <div class="nome-produto">Orientação parental no autismo</div>
+                    </div>
+        
+                    <!-- Orientação parental sobre o desenvolvimento da linguagem -->
+                    <div class="produto">
+                        <div class="foto-produto">
+                            <img src="https://img.freepik.com/fotos-gratis/mae-lendo-livro-para-crianca_1303-17868.jpg" alt="Orientação parental sobre o desenvolvimento da linguagem">
+                        </div>
+                        <div class="nome-produto">Orientação parental sobre o desenvolvimento da linguagem</div>
+                    </div>
+                </div>
+            </section>
+        </section>
+
+        <section id="ebook" class="container section">
+            <h2>Ebooks</h2>
+
+            <div class="ebook-banner">
+
+                <section id="ebook" class="container section">
+                    <h3>Apraxia de fala na infância</h3>
+                    <a href="http://www.google.com"><img data-config="imagemEbookGratis" src="imgs/Screenshot_20250418_095825_Chrome.jpg" alt="Capa do Ebook Grátis"></a>
+                    <p>A Apraxia de Fala na Infância (AFI) é um distúrbio neurológico motor da fala em que as crianças têm dificuldade em planejar e produzir os movimentos precisos necessários para falar. Isso não se deve a fraqueza muscular, mas sim a um problema na programação dos movimentos. A AFI se manifesta por erros inconsistentes na fala, dificuldade em sequenciar os sons e palavras, e fala de difícil compreensão. O diagnóstico precoce e a terapia da fala intensiva são cruciais para ajudar as crianças com AFI a desenvolverem suas habilidades de comunicação.</p>
+                </section>
+                
+                <section id="ebook" class="container section">
+                    <h3>Audiologia Avançada</h3>
+
+                    <a href="https://drive.google.com/file/d/1lJRWvop44ESDQRqkG_8NaXXct8Xe8JkD/view"><img data-config="imagemEbookGratis" src="https://m.media-amazon.com/images/I/611wopNC5LL._AC_UF1000,1000_QL80_.jpg" alt="Capa do Ebook Grátis"></a>
+
+                    <p>A audiologia é a ciência que estuda a audição, o equilíbrio e distúrbios relacionados. Audiologistas avaliam, diagnosticam e tratam problemas auditivos e vestibulares em pessoas de todas as idades. O objetivo é otimizar a comunicação e a qualidade de vida dos indivíduos.</p>
+                    <div class="prateleira">
+                    
+                </section>
+            </div>
+        </section>
+
+        <section id="atividades" class="container section">
+            <h2>Comprar Atividades</h2>
+
+            <div class="atividades-lista">
+                <div class="atividade-item">
+                    <img class="imgsdeatv" src="https://vipzinho.com.br/wp-content/uploads/2023/09/fonoaudiologa-tratamento-fala-rhc-2.jpg" alt="Imagem da Atividade 1">
+                    
+                    <h3>Atividade 1: Exercícios de fala</h3>
+                    
+                    <p>visa aprimorar a comunicação, trabalhando aspectos como articulação de sons, ritmo, fluidez e expressividade da fala. Ele auxilia no tratamento de dificuldades como trocas de letras, gagueira ou problemas de voz, buscando uma fala mais clara, eficiente e confortável para o indivíduo. O objetivo é promover uma comunicação eficaz nas diversas situações do dia a dia.</p>
+                    
+                    <a data-config-whatsapp-atividade="Atividade 1: [Nome da Atividade]" href="#" class="button" target="_blank">COMPRAR</a>
+                </div>
+            </div>
+
+            <div class="atividade-item">
+                <img class="imgsdeatv" src="https://www.binaural.com.br/wp-content/uploads/2023/05/fonoaudiologo1-1024x682.jpg" alt="Imagem da Atividade 1">
+                
+                <h3>Atividade 2: Exercícios de audição</h3>
+                
+                <p>Exercícios de fonoaudiologia focados em audição podem melhorar a detecção, discriminação e compreensão de sons. Eles auxiliam na reabilitação auditiva, no treinamento para ambientes ruidosos e no desenvolvimento da linguagem, otimizando o processamento auditivo.</p>
+
+                <a data-config-whatsapp-atividade="Atividade 1: [Nome da Atividade]" href="#" class="button" target="_blank">COMPRAR</a>
+            </div>
+        </section>
+
+        <section id="agendamento" class="container section">
+            <h2>Agenda</h2>
+
+            <div class="atividade-item">
+
+                <img class="imgsdeatv" src="https://static-00.iconduck.com/assets.00/calendar-small-icon-465x512-1wuvg4w9.png" alt="Imagem da Atividade 1">
+
+                <p>Preencha os dados, e clique em solicitar:</p>
+
+                <div id="form">
+                    <table>
+                        <tr>
+                            <td>NOME</td>
+                            <td><input type="text" name="nm" id="nm" placeholder="Nome completo"></td>
+                        </tr>
+                        <tr>
+                            <td>DATA</td>
+                            <td><input type="date" placeholder="01/12/2025"></td>
+                        </tr>
+                        <tr>
+                            <td>HORA</td>
+                            <td><input type="time"></td>
+                        </tr>
+                    </table>
+                    <br>
+                    <a href="#" class="button" target="_blank">Solicitar</a>
+
+                </div>
+            </div>
+
+        </section>
+
+        <section id="contato" class="container section">
+            <h2>Contato</h2>
+
+            <p>Clique na imagem e entre em contato!</p>
+
+            <a href="https://wa.me/5519997662818?text=Olá,%20você%20está%20sendo%20direcionado(a),%20para%20o%20Whatsapp%20da%20Fonoaudióloga%20Lorena%20Gomes%20Teixeira"><img src="https://cdn-icons-png.freepik.com/512/3536/3536445.png" alt="whats" style="width: 100px; margin-left: 30%; display: inline;"></a>
+
+            <a href="https://www.instagram.com/lorenacarioca?igsh=enhkZnRkb3Z5Y3Fk"><img src="https://store-images.s-microsoft.com/image/apps.43327.13510798887167234.cadff69d-8229-427b-a7da-21dbaf80bd81.79b8f512-1b22-45d6-9495-881485e3a87e" alt="whats" style="width: 100px; margin-left: 3%;display: inline;"></a>
+        </section>
+    </main>
+
+    <div class="video-flutuante">
+        <button class="fechar-video-flutuante">×</button>
+        <video width="320" height="180" controls autoplay loop muted>
+            <source src="videos/lorena.mp4" type="video/mp4">
+            Seu navegador não suporta o elemento de vídeo.
+        </video>
+    </div>
+
+    <footer>
+        <div class="container">
+            <p>Elioenai Programmer© [2025] <span data-config="nomeProfissional"></span>. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <script>
+        const saibaMaisBotoes = document.querySelectorAll('.saiba-mais-btn');
+        saibaMaisBotoes.forEach(botao => {
+            botao.addEventListener('click', function() {
+                const areaId = this.getAttribute('data-area');
+                const conteudo = document.getElementById(`${areaId}-conteudo`);
+                conteudo.classList.toggle('mostrar');
+            });
+        });
+
+        function preencherConteudo() {
+            for (const key in config) {
+                const elements = document.querySelectorAll(`[data-config="${key}"]`);
+                elements.forEach(element => {
+                    if (element.tagName === 'IMG') {
+                        element.src = config[key];
+                    } else if (element.tagName === 'A') {
+                        element.href = config[key];
+                        if (!element.hasAttribute('data-config-whatsapp') && !element.hasAttribute('data-config-whatsapp-contato') && !element.hasAttribute('data-config-whatsapp-agendamento-online') && !element.hasAttribute('data-config-whatsapp-atividade') && !element.hasAttribute('data-config-youtube')) {
+                            element.textContent = config[key]; // Se quiser que o link seja o texto do link (para links gerais)
+                        }
+                    } else {
+                        element.textContent = config[key];
+                    }
+                });
+            }
+
+            // Configurar links do WhatsApp
+            const numeroWhatsApp = config.numeroWhatsApp;
+            const nomeProfissional = config.nomeProfissional;
+
+            document.querySelectorAll('[data-config-whatsapp="true"]').forEach(element => {
+                const textoAgendamento = encodeURIComponent(`Olá, gostaria de agendar uma avaliação com ${nomeProfissional}.`);
+                element.href = `https://wa.me/${numeroWhatsApp}?text=${textoAgendamento}`;
+            });
+
+            document.querySelectorAll('[data-config-whatsapp-contato="true"]').forEach(element => {
+                element.href = `https://wa.me/${numeroWhatsApp}`;
+            });
+
+            document.querySelectorAll('[data-config-whatsapp-agendamento-online="true"]').forEach(element => {
+                const textoAgendamentoOnline = encodeURIComponent(`Olá, gostaria de agendar uma sessão online com ${nomeProfissional}.`);
+                element.href = `https://wa.me/${numeroWhatsApp}?text=${textoAgendamentoOnline}`;
+            });
+
+            document.querySelectorAll('[data-config-whatsapp-atividade]').forEach(element => {
+                const atividadeNome = element.getAttribute('data-config-whatsapp-atividade');
+                const textoCompraAtividade = encodeURIComponent(`Olá, gostaria de comprar a atividade "${atividadeNome}" de ${nomeProfissional}.`);
+                element.href = `https://wa.me/${numeroWhatsApp}?text=${textoCompraAtividade}`;
+            });
+
+            // Configurar vídeo de apresentação do YouTube
+            document.querySelectorAll('[data-config-youtube="videoApresentacaoYouTube"]').forEach(element => {
+                const configKey = element.getAttribute('data-config-youtube');
+                if (config.hasOwnProperty(configKey)) {
+                    element.src = `https://www.youtube.com/embed/${config[configKey]}`;
+                }
+            });
+
+            // Configurar vídeo flutuante do YouTube (mantenha se você ainda quiser um vídeo flutuante)
+            const videoFlutuante = document.querySelector('.video-flutuante iframe');
+            if (videoFlutuante && config.hasOwnProperty('videoFlutuanteYouTube')) {
+                videoFlutuante.src = `https://www.youtube.com/embed/${config.videoFlutuanteYouTube}?autoplay=1&mute=1&loop=1&playlist=${config.videoFlutuanteYouTube}`;
+            }
+
+            // Adicionar funcionalidade para fechar o vídeo flutuante (mantenha se você ainda quiser um vídeo flutuante)
+            const botaoFecharVideo = document.querySelector('.fechar-video-flutuante');
+            if (botaoFecharVideo) {
+                botaoFecharVideo.addEventListener('click', () => {
+                    const videoFlutuanteDiv = document.querySelector('.video-flutuante');
+                    if (videoFlutuanteDiv) {
+                        videoFlutuanteDiv.style.display = 'none';
+                        if (videoFlutuante) {
+                            videoFlutuante.src = '';
+                        }
+                    }
+                });
+            }
+        }
+
+        // Preencher a seção de ebooks
+        const prateleira = document.querySelector('.ebook-banner .prateleira');
+        if (prateleira && config.ebooks) {
+            prateleira.innerHTML = ''; // Limpa qualquer conteúdo anterior
+            config.ebooks.forEach(ebook => {
+                const bookDiv = document.createElement('div');
+                bookDiv.classList.add('areabook');
+                bookDiv.id = ebook.id;
+
+                const fotoBookDiv = document.createElement('div');
+                fotoBookDiv.classList.add('fotoBook');
+                fotoBookDiv.id = ebook.id;
+                fotoBookDiv.style.backgroundImage = `url('${config[ebook.imageKey]}')`; // Define a imagem de fundo
+
+                const descricaoDiv = document.createElement('div');
+                descricaoDiv.classList.add('descrição');
+                descricaoDiv.id = ebook.id;
+
+                const titleSpan = document.createElement('span');
+                titleSpan.classList.add('title');
+                titleSpan.id = ebook.id;
+                titleSpan.textContent = ebook.title;
+
+                const subtitleSpan = document.createElement('span');
+                subtitleSpan.classList.add('subtitle');
+                subtitleSpan.id = ebook.id;
+                subtitleSpan.textContent = ebook.subtitle;
+
+                const precoSpan = document.createElement('span');
+                precoSpan.classList.add('preço');
+                precoSpan.id = ebook.id;
+                precoSpan.textContent = ebook.price;
+
+                descricaoDiv.appendChild(titleSpan);
+                descricaoDiv.appendChild(subtitleSpan);
+                descricaoDiv.appendChild(precoSpan);
+                fotoBookDiv.appendChild(descricaoDiv);
+                bookDiv.appendChild(fotoBookDiv);
+                prateleira.appendChild(bookDiv);
+            });
+        }
+
+        // Atualizar o título da página
+        const titleElement = document.querySelector('title[data-config="nomeProfissional"]');
+        if (titleElement && config.hasOwnProperty('nomeProfissional')) {
+            titleElement.textContent = config.nomeProfissional;
+        }
+    window.onload = preencherConteudo;
+    </script>
+</body>
+</html>
